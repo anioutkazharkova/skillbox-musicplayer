@@ -44,7 +44,7 @@ import androidx.compose.ui.unit.sp
 import androidx.media3.common.MediaItem
 import com.azharkova.musicplayer.MainActivity.Companion.player
 import com.azharkova.musicplayer.R
-import com.azharkova.musicplayer.data.Music
+import com.azharkova.musicplayer.data.SongItem
 import com.azharkova.musicplayer.ext.convertToText
 import kotlinx.coroutines.delay
 
@@ -53,7 +53,7 @@ import kotlinx.coroutines.delay
  */
 @OptIn(ExperimentalFoundationApi::class, ExperimentalAnimationApi::class)
 @Composable
-fun SongScreen(playList: List<Music>, context: Context) {
+fun SongScreen(playList: List<SongItem>, context: Context) {
 
     val packageName = context.packageName
     val pagerState = rememberPagerState(pageCount = { playList.count() })

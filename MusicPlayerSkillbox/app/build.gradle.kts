@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -55,6 +56,7 @@ dependencies {
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
+    implementation("androidx.navigation:navigation-runtime-ktx:2.7.6")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -62,7 +64,12 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
-
+    implementation("com.github.bumptech.glide:compose:1.0.0-beta01")
     implementation ("com.google.accompanist:accompanist-systemuicontroller:0.33.2-alpha")
     implementation ("androidx.media3:media3-exoplayer:1.1.1")
+    implementation("com.github.bumptech.glide:glide:4.15.1")
+    implementation("com.github.bumptech.glide:compose:1.0.0-alpha.1")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.14.2")
+    implementation( "io.insert-koin:koin-android:3.2.0")
+    implementation("androidx.navigation:navigation-compose:2.5.3")
 }
