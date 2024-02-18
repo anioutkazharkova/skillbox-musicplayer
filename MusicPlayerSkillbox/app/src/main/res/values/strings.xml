@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">MusicPlayer</string>
-    <string name="songs_list">SongsList</string>
-    <string name="songs_item">SongsItem</string>
-</resources>
